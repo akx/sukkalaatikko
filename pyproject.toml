@@ -1,0 +1,15 @@
+[project]
+name = "sukkalaatikko"
+version = "0.1.0"
+description = "UNIX socket relay"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "scapy>=2.6.1",
+]
+
+[tool.ruff.lint]
+extend-select = ["COM", "I"]
+ignore = ["ANN", "D", "T201"]
